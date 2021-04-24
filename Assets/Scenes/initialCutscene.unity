@@ -1511,6 +1511,91 @@ Transform:
   m_Father: {fileID: 822592932}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &392819841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 392819845}
+  - component: {fileID: 392819842}
+  - component: {fileID: 392819843}
+  - component: {fileID: 392819844}
+  m_Layer: 0
+  m_Name: StopMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &392819842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392819841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3083c306715d143449f0ee1ab8caf43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentID: 0
+  instanceID: 0
+  actionsList: {fileID: 392819843}
+  runInBackground: 1
+  destroyAfterFinishing: 0
+  onFinish:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &392819843
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392819841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6d5a50368374438dbff3af09a8fefb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 392819844}
+  executingIndex: -1
+  isExecuting: 0
+--- !u!114 &392819844
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392819841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a265a1f37ee45c9861f745d8634acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  type: 1
+  audioClip: {fileID: 8300000, guid: 57c88e8964d92b740a9edad45db5ce0c, type: 3}
+  fadeOut: 0
+--- !u!4 &392819845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392819841}
+  m_LocalRotation: {x: -0, y: 0.82470423, z: -0, w: 0.56556433}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1045157388}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &408635080
 GameObject:
   m_ObjectHideFlags: 0
@@ -3903,6 +3988,7 @@ Transform:
   - {fileID: 1738251704}
   - {fileID: 1024635915}
   - {fileID: 1686819453}
+  - {fileID: 392819845}
   m_Father: {fileID: 1427654705}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5105,7 +5191,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1427654703}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 50a504163cba0444d8260f84539cf12d, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 7d1e1b1796e7ce74d85976f90ef6c0dd, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -5123,6 +5209,20 @@ PlayableDirector:
     value: {fileID: 1024635917}
   - key: {fileID: 5812500116744266816, guid: 50a504163cba0444d8260f84539cf12d, type: 2}
     value: {fileID: 1686819450}
+  - key: {fileID: -678537630202764846, guid: 7d1e1b1796e7ce74d85976f90ef6c0dd, type: 2}
+    value: {fileID: 795047098}
+  - key: {fileID: 5257256708093886163, guid: 7d1e1b1796e7ce74d85976f90ef6c0dd, type: 2}
+    value: {fileID: 1021081037}
+  - key: {fileID: 7170996334706827080, guid: 7d1e1b1796e7ce74d85976f90ef6c0dd, type: 2}
+    value: {fileID: 438509244}
+  - key: {fileID: -7644074645624160921, guid: 7d1e1b1796e7ce74d85976f90ef6c0dd, type: 2}
+    value: {fileID: 1738251711}
+  - key: {fileID: -8769935067306464559, guid: 7d1e1b1796e7ce74d85976f90ef6c0dd, type: 2}
+    value: {fileID: 1024635917}
+  - key: {fileID: 5812500116744266816, guid: 7d1e1b1796e7ce74d85976f90ef6c0dd, type: 2}
+    value: {fileID: 1686819450}
+  - key: {fileID: -8680392772092058813, guid: 7d1e1b1796e7ce74d85976f90ef6c0dd, type: 2}
+    value: {fileID: 392819842}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1427654705
