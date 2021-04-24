@@ -3718,6 +3718,7 @@ GameObject:
   - component: {fileID: 1024635915}
   - component: {fileID: 1024635917}
   - component: {fileID: 1024635916}
+  - component: {fileID: 1024635918}
   m_Layer: 0
   m_Name: Fade
   m_TagString: Untagged
@@ -3751,7 +3752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d5a50368374438dbff3af09a8fefb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actions: []
+  actions:
+  - {fileID: 1024635918}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &1024635917
@@ -3774,6 +3776,38 @@ MonoBehaviour:
   onFinish:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1024635918
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024635914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4067f793eb8264fe6a62084efe71ed5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  scene: SampleScene
+  mode: 0
+  duration: 2
+  color:
+    optionIndex: 0
+    value: {r: 0, g: 0, b: 0, a: 1}
+    global:
+      allowTypesMask: 16
+      name: 
+    local:
+      allowTypesMask: 16
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
 --- !u!1 &1027779425
 GameObject:
   m_ObjectHideFlags: 0
@@ -5084,6 +5118,8 @@ PlayableDirector:
     value: {fileID: 1738251711}
   - key: {fileID: 5257256708093886163, guid: 50a504163cba0444d8260f84539cf12d, type: 2}
     value: {fileID: 1021081037}
+  - key: {fileID: -8769935067306464559, guid: 50a504163cba0444d8260f84539cf12d, type: 2}
+    value: {fileID: 1024635917}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1427654705
@@ -6223,6 +6259,20 @@ GameObject:
   - component: {fileID: 1738251719}
   - component: {fileID: 1738251718}
   - component: {fileID: 1738251717}
+  - component: {fileID: 1738251722}
+  - component: {fileID: 1738251727}
+  - component: {fileID: 1738251726}
+  - component: {fileID: 1738251738}
+  - component: {fileID: 1738251737}
+  - component: {fileID: 1738251736}
+  - component: {fileID: 1738251735}
+  - component: {fileID: 1738251734}
+  - component: {fileID: 1738251733}
+  - component: {fileID: 1738251732}
+  - component: {fileID: 1738251731}
+  - component: {fileID: 1738251730}
+  - component: {fileID: 1738251729}
+  - component: {fileID: 1738251728}
   m_Layer: 0
   m_Name: Dialog
   m_TagString: Untagged
@@ -6345,23 +6395,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
+  - {fileID: 1738251722}
   - {fileID: 1738251709}
   - {fileID: 1738251708}
+  - {fileID: 1738251727}
   - {fileID: 1738251707}
   - {fileID: 1738251706}
+  - {fileID: 1738251726}
   - {fileID: 1738251705}
   - {fileID: 1738251716}
+  - {fileID: 1738251738}
   - {fileID: 1738251715}
+  - {fileID: 1738251737}
   - {fileID: 1738251714}
+  - {fileID: 1738251736}
   - {fileID: 1738251713}
+  - {fileID: 1738251735}
   - {fileID: 1738251712}
   - {fileID: 1738251725}
+  - {fileID: 1738251734}
   - {fileID: 1738251724}
+  - {fileID: 1738251733}
   - {fileID: 1738251723}
+  - {fileID: 1738251732}
   - {fileID: 1738251721}
+  - {fileID: 1738251731}
   - {fileID: 1738251720}
+  - {fileID: 1738251730}
   - {fileID: 1738251719}
+  - {fileID: 1738251729}
   - {fileID: 1738251718}
+  - {fileID: 1738251728}
   - {fileID: 1738251717}
   executingIndex: -1
   isExecuting: 0
@@ -6580,6 +6644,24 @@ MonoBehaviour:
     translationID: 0
   color: {r: 1, g: 0.8235294, b: 0, a: 1}
   time: 4
+--- !u!114 &1738251722
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: 8a181263b27c7954ca6ee2bc19325c62, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
 --- !u!114 &1738251723
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -6634,6 +6716,240 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isExpanded: 1
   waitTime: 0.25
+--- !u!114 &1738251726
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: f06444c4e01d3ad49aac4a1e3cdaf955, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
+--- !u!114 &1738251727
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: 8ba4d9b554627264ca6ca857e55b33b1, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
+--- !u!114 &1738251728
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: cf2f2ee2844c51248ab199c846b68e02, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
+--- !u!114 &1738251729
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: cf2f2ee2844c51248ab199c846b68e02, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
+--- !u!114 &1738251730
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: cf2f2ee2844c51248ab199c846b68e02, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
+--- !u!114 &1738251731
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: 8ba4d9b554627264ca6ca857e55b33b1, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
+--- !u!114 &1738251732
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: 8ba4d9b554627264ca6ca857e55b33b1, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
+--- !u!114 &1738251733
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: 5d36249591781fd479525419ddb66709, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
+--- !u!114 &1738251734
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: f06444c4e01d3ad49aac4a1e3cdaf955, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
+--- !u!114 &1738251735
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: 8ba4d9b554627264ca6ca857e55b33b1, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
+--- !u!114 &1738251736
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: d6d9d102830b78946bb95adc7eb7854d, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
+--- !u!114 &1738251737
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: 8ba4d9b554627264ca6ca857e55b33b1, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
+--- !u!114 &1738251738
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738251703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: 5d36249591781fd479525419ddb66709, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 0.1
 --- !u!1 &1759111604
 GameObject:
   m_ObjectHideFlags: 0

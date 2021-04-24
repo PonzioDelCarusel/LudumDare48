@@ -218,3 +218,48 @@ MonoBehaviour:
       codePaths:
       - Assets/Plugins/GameCreator/Traversal/
       dataPaths: []
+  - module:
+      moduleID: com.gamecreator.examples.transitions
+      version:
+        major: 0
+        minor: 5
+        patch: 1
+      displayName: Scene Transitions Examples
+      description: Example scenes that show how to use the different transitions
+      category: Examples
+      dependencies:
+      - moduleID: com.gamecreator.module.transitions
+        version:
+          major: 0
+          minor: 5
+          patch: 1
+      tags:
+      - examples
+      - transitions
+      authorName: Marti-Joan Nogue Coll
+      authorMail: marti@catsoft-studios.com
+      authorSite: https://gamecreator.io
+      includesData: 0
+      codePaths:
+      - Assets/Plugins/GameCreator/TransitionsExamples/
+      dataPaths: []
+  - module:
+      moduleID: com.gamecreator.module.transitions
+      version:
+        major: 0
+        minor: 5
+        patch: 1
+      displayName: Scene Transitions
+      description: Beautify the way you change between scenes with a set of transitions.
+      category: Module
+      dependencies: []
+      tags:
+      - module
+      - transitions
+      authorName: Marti-Joan Nogue Coll
+      authorMail: marti@catsoft-studios.com
+      authorSite: https://gamecreator.io
+      includesData: 0
+      codePaths:
+      - Assets/Plugins/GameCreator/Transitions/
+      dataPaths: []
