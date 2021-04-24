@@ -21,6 +21,7 @@ MonoBehaviour:
   - {fileID: 114132451361532224}
   - {fileID: 114851839239555622}
   - {fileID: 114936355189639016}
+  - {fileID: 3315251664049949289}
 --- !u!114 &114132451361532224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,4 +253,33 @@ MonoBehaviour:
     color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     baseValue: 0
     formula: {fileID: 11400000, guid: bb4d6d1cb60e84e2698ab67823122506, type: 2}
+  isHidden: 0
+--- !u!114 &3315251664049949289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0c8dd195211246108375b2b5fb580d5, type: 3}
+  m_Name: 8tg5frpx
+  m_EditorClassIdentifier: 
+  uniqueID: 5ee9b5549ffb4210addd1ffbfdbf5ab1
+  stat:
+    uniqueName: endurance
+    shortName: 
+    title:
+      content: Endurance
+      postProcess: 0
+      translationID: 0
+    description:
+      content: Maximum amount of Stamina
+      postProcess: 0
+      translationID: 0
+    icon: {fileID: 0}
+    color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    baseValue: 100
+    formula: {fileID: 11400000, guid: d0552595330177d4586722b18eca271c, type: 2}
   isHidden: 0
