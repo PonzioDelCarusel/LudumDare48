@@ -2000,6 +2000,7 @@ GameObject:
   - component: {fileID: 498141796}
   - component: {fileID: 498141795}
   - component: {fileID: 498141794}
+  - component: {fileID: 498141797}
   m_Layer: 0
   m_Name: Enemigo
   m_TagString: Untagged
@@ -2359,10 +2360,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 498141782}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29094c40ec14f4f9cbf93b7699296fcf, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c0079cc9e07540d5bc1d6081f9cf87f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 498141795}
+  trigger: {fileID: 0}
+  otherCollider: {fileID: 534676668}
+  storeSelf:
+    variableType: 0
+    global:
+      allowTypesMask: 512
+      name: 
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+  storeCollider:
+    variableType: 0
+    global:
+      allowTypesMask: 512
+      name: 
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
 --- !u!114 &498141795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2378,7 +2410,7 @@ MonoBehaviour:
   igniters:
     keys: ffffffff
     values:
-    - {fileID: 498141794}
+    - {fileID: 498141797}
   items:
   - option: 1
     conditions: {fileID: 0}
@@ -2396,8 +2428,52 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
+  m_Size: {x: 1.5, y: 2, z: 1.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &498141797
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498141782}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be369e1556c34293bad9145865dddfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 498141795}
+  otherCollider: {fileID: 534676668}
+  storeSelf:
+    variableType: 0
+    global:
+      allowTypesMask: 512
+      name: 
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+  storeCollider:
+    variableType: 0
+    global:
+      allowTypesMask: 512
+      name: 
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
 --- !u!1 &498798485
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,6 +2552,7 @@ GameObject:
   - component: {fileID: 534676672}
   - component: {fileID: 534676674}
   - component: {fileID: 534676673}
+  - component: {fileID: 534676675}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2751,6 +2828,19 @@ MonoBehaviour:
     actions: {fileID: 1036942795}
   minDistance: 0
   minDistanceToPlayer: 5
+--- !u!65 &534676675
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534676666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &554115613
 GameObject:
   m_ObjectHideFlags: 0
@@ -5540,6 +5630,7 @@ GameObject:
   - component: {fileID: 1305357022}
   - component: {fileID: 1305357020}
   - component: {fileID: 1305357021}
+  - component: {fileID: 1305357023}
   m_Layer: 0
   m_Name: Actions (2)
   m_TagString: Untagged
@@ -5579,7 +5670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d5a50368374438dbff3af09a8fefb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actions: []
+  actions:
+  - {fileID: 1305357023}
   executingIndex: -1
   isExecuting: 0
 --- !u!4 &1305357022
@@ -5596,6 +5688,62 @@ Transform:
   m_Father: {fileID: 498141786}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1305357023
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305357019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d7be1b910bc48cda9cb586c1cdce91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  character:
+    target: 2
+    character: {fileID: 498141785}
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    global:
+      allowTypesMask: 512
+      name: 
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+    eventChangeVariable:
+      m_PersistentCalls:
+        m_Calls: []
+  action: 0
+  layer: 0
+  avatarMask: {fileID: 0}
+  state: 1
+  stateAsset: {fileID: 11400000, guid: a4b49d87f91b5495d92aed46c11bb571, type: 2}
+  stateClip: {fileID: 74800549993581540, guid: 68dc0f3cb711c4eebb0b01b82aa8ddf3, type: 2}
+  weight: 1
+  transitionTime: 0.25
+  speed:
+    optionIndex: 0
+    value: 1
+    global:
+      allowTypesMask: 4
+      name: 
+    local:
+      allowTypesMask: 4
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
 --- !u!1 &1308597302
 GameObject:
   m_ObjectHideFlags: 0
