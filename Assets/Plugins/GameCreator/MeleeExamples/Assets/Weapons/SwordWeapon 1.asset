@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 174e3c307f7474e6fa3b8acd263a757e, type: 3}
-  m_Name: SwordWeapon
+  m_Name: SwordWeapon 1
   m_EditorClassIdentifier: 
   weaponName:
     content: Sword
@@ -27,8 +27,8 @@ MonoBehaviour:
   attachment: 18
   positionOffset: {x: 0.1, y: -0.05, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0}
-  audioSheathe: {fileID: 8300000, guid: ec5b102aa3bfd4afabe344f209d29ef0, type: 3}
-  audioDraw: {fileID: 8300000, guid: 9f819c03d98d04eed982c4633d9a8479, type: 3}
+  audioSheathe: {fileID: 0}
+  audioDraw: {fileID: 0}
   audioImpactNormal: {fileID: 8300000, guid: 00f967e54adc343b1a07b49f4b7514c7, type: 3}
   audioImpactKnockback: {fileID: 8300000, guid: defd2ad8bedbe453f94c94c4590bcf2f, type: 3}
   groundHitReactionsFront:
@@ -48,7 +48,7 @@ MonoBehaviour:
   - combo: 00000000
     condition: 3
     meleeClip: {fileID: 11400000, guid: 899fd6e838050424f969ab3d0ea1c250, type: 2}
-    isEnabled: 1
+    isEnabled: 0
   - combo: 00000000
     condition: 1
     meleeClip: {fileID: 11400000, guid: ddbab4136314d4c3fa018d17ddb6336e, type: 2}
@@ -56,22 +56,22 @@ MonoBehaviour:
   - combo: 00000000
     condition: 7
     meleeClip: {fileID: 11400000, guid: 6a1998bfdd4134b60998de41469a4d16, type: 2}
-    isEnabled: 1
+    isEnabled: 0
   - combo: 00000000
     condition: 6
     meleeClip: {fileID: 11400000, guid: 5d70869a08c5e488c8ce44010e913a9d, type: 2}
-    isEnabled: 1
+    isEnabled: 0
   - combo: 00000000
     condition: 0
     meleeClip: {fileID: 11400000, guid: 6614fcd05edca4ce68c841956936d2a5, type: 2}
-    isEnabled: 1
+    isEnabled: 0
   - combo: 0000000000000000
     condition: 0
     meleeClip: {fileID: 11400000, guid: efbea7472b3f84aceb7c26959dacbbbe, type: 2}
-    isEnabled: 1
+    isEnabled: 0
   - combo: 000000000000000000000000
     condition: 0
     meleeClip: {fileID: 11400000, guid: ab7574fd7695149e39c974ee435cb36a, type: 2}
-    isEnabled: 1
+    isEnabled: 0
   prefabImpactNormal: {fileID: 4329036519906242892, guid: 9408437927dbd43d6bca1f23faa3aba8, type: 3}
   prefabImpactKnockback: {fileID: 4329036519906242892, guid: 9408437927dbd43d6bca1f23faa3aba8, type: 3}
