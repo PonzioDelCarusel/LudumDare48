@@ -1287,7 +1287,7 @@ MonoBehaviour:
   isExpanded: 1
   sceneName:
     optionIndex: 0
-    value: SampleScene
+    value: initialCutsceneFINAL
     global:
       allowTypesMask: 2
       name: 

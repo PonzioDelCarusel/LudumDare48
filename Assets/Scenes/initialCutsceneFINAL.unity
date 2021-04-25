@@ -5850,7 +5850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
-  scene: SampleScene
+  scene: Level 1
   mode: 0
   duration: 2
   color:
