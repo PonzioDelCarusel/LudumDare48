@@ -97,6 +97,9 @@ GameObject:
   - component: {fileID: 1185396637}
   - component: {fileID: 1185396636}
   - component: {fileID: 1185396635}
+  - component: {fileID: 2015023816}
+  - component: {fileID: 2015023817}
+  - component: {fileID: 2015023818}
   m_Layer: 0
   m_Name: ActionsAbrazo
   m_TagString: Untagged
@@ -154,6 +157,9 @@ MonoBehaviour:
   - {fileID: 1185396635}
   - {fileID: 1185396637}
   - {fileID: 1185396636}
+  - {fileID: 2015023816}
+  - {fileID: 2015023818}
+  - {fileID: 2015023817}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &1185396637
@@ -168,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0e2dbe10998b4ebabce38ea0ce50ee7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isExpanded: 1
+  isExpanded: 0
   target:
     target: 0
     gameObject: {fileID: 0}
@@ -259,8 +265,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   space: 1
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0}
+  position: {x: 0, y: 1, z: 0}
+  rotation: {x: 90, y: 0, z: 90}
 --- !u!114 &1185396635
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -276,6 +282,106 @@ MonoBehaviour:
   isExpanded: 1
   logType: 0
   message: Abrazoooooooooo
+--- !u!114 &2015023816
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185396633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0344f426e4a814e14b32944e17e4cca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 0
+  character:
+    target: 0
+    character: {fileID: 8635099074998781106}
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    global:
+      allowTypesMask: 512
+      name: 
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+    eventChangeVariable:
+      m_PersistentCalls:
+        m_Calls: []
+  action: 0
+  hand: 3
+  reachTarget:
+    target: 3
+    gameObject: {fileID: 2083267737400287888}
+    global:
+      allowTypesMask: 512
+      name: 
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+    eventChangeVariable:
+      m_PersistentCalls:
+        m_Calls: []
+  duration: 0.5
+--- !u!114 &2015023817
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185396633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4067f793eb8264fe6a62084efe71ed5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 0
+  scene: finalCutsceneFINAL
+  mode: 0
+  duration: 1
+  color:
+    optionIndex: 0
+    value: {r: 0, g: 0, b: 0, a: 1}
+    global:
+      allowTypesMask: 16
+      name: 
+    local:
+      allowTypesMask: 16
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+--- !u!114 &2015023818
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185396633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093bbc6a7c1334b37ac569a948728c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  waitTime: 2
 --- !u!1 &1231484927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,7 +1611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8635099074661078724
 Transform:
   m_ObjectHideFlags: 0
@@ -1860,12 +1966,12 @@ GameObject:
   - component: {fileID: 8635099075166919515}
   - component: {fileID: 8635099075166919512}
   m_Layer: 0
-  m_Name: Actions (1)
+  m_Name: ActionsFollow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8635099075166919513
 Transform:
   m_ObjectHideFlags: 0
