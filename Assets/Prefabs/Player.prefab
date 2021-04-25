@@ -1588,6 +1588,7 @@ GameObject:
   - component: {fileID: 165164089293486529}
   - component: {fileID: 165164089293486530}
   - component: {fileID: 165164089293486531}
+  - component: {fileID: 7310100535565563225}
   m_Layer: 0
   m_Name: Trigger_Attack
   m_TagString: Untagged
@@ -1665,6 +1666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 165164089293486531}
+  - {fileID: 7310100535565563225}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &165164089293486530
@@ -1714,6 +1716,20 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   key: 0
+--- !u!114 &7310100535565563225
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165164089293486533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093bbc6a7c1334b37ac569a948728c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  waitTime: 0.5
 --- !u!1 &165164089345673767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,7 +1877,7 @@ GameObject:
   - component: {fileID: 165164089451430099}
   - component: {fileID: 165164089451430098}
   m_Layer: 0
-  m_Name: Actions (1)
+  m_Name: ActionsAttackStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2967,7 +2983,6 @@ Transform:
   - {fileID: 6633677724004967945}
   - {fileID: 165164089451430097}
   - {fileID: 165164089293486532}
-  - {fileID: 165164090198921429}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3587,36 +3602,6 @@ Transform:
   - {fileID: 165164090284953622}
   m_Father: {fileID: 165164089864848302}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &165164090198921430
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 165164090198921429}
-  m_Layer: 0
-  m_Name: PadreAbrazo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &165164090198921429
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165164090198921430}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.341, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 165164090022934944}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &165164090220664943
 GameObject:

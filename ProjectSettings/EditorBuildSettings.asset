@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/initialCutscene.unity
+    guid: 1af577a8b800eec42b09930d61502f86
+  - enabled: 1
+    path: Assets/Scenes/Ariel3.unity
+    guid: 731c8667f4050a0408cc4573f571cd55
+  - enabled: 1
+    path: Assets/Scenes/Ariel2.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/menuPrincipal.unity
+    guid: ab19e148ac1b94e48878f2d48eb9b464
   - enabled: 1
     path: Assets/Plugins/GameCreator/Examples/Scenes/Example-Intro.unity
     guid: 8997031d9d48747c99f486950d712fbc
