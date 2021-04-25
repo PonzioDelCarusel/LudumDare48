@@ -205,7 +205,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   action: 0
-  bone: 7
+  bone: 10
   instance:
     target: 3
     gameObject: {fileID: 2215010317875785063, guid: 15ff19aae22f46f4fa1407e2fa47f088, type: 3}
