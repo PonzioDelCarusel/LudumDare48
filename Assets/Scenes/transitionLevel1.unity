@@ -536,7 +536,7 @@ MonoBehaviour:
   isExpanded: 1
   sceneName:
     optionIndex: 0
-    value: 
+    value: Level 2
     global:
       allowTypesMask: 2
       name: 
