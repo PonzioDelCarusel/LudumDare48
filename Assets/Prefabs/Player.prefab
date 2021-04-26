@@ -3073,7 +3073,7 @@ MonoBehaviour:
   audioMixer: 2
   mixerGroup: {fileID: 0}
   fadeIn: 0
-  volume: 1
+  volume: 0.075
 --- !u!1 &4684375900452471375
 GameObject:
   m_ObjectHideFlags: 0
@@ -3331,7 +3331,7 @@ MonoBehaviour:
   audioMixer: 2
   mixerGroup: {fileID: 0}
   fadeIn: 0
-  volume: 0.5
+  volume: 0.075
 --- !u!1 &5206737953157208512
 GameObject:
   m_ObjectHideFlags: 0
