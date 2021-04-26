@@ -16720,7 +16720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
-  scene: menuPrincipal
+  scene: credits
   mode: 0
   duration: 1.5
   color:
