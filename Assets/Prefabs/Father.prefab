@@ -45,8 +45,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2, z: 1.5}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &1073810746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,10 +96,10 @@ GameObject:
   - component: {fileID: 1185396638}
   - component: {fileID: 1185396637}
   - component: {fileID: 1185396636}
-  - component: {fileID: 1185396635}
   - component: {fileID: 2015023816}
   - component: {fileID: 2015023817}
   - component: {fileID: 2015023818}
+  - component: {fileID: 608090598}
   m_Layer: 0
   m_Name: ActionsAbrazo
   m_TagString: Untagged
@@ -154,11 +154,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 1185396635}
   - {fileID: 1185396637}
   - {fileID: 1185396636}
   - {fileID: 2015023816}
   - {fileID: 2015023818}
+  - {fileID: 608090598}
   - {fileID: 2015023817}
   executingIndex: -1
   isExecuting: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe21fe23cad14b3cbc622d92c17a9a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isExpanded: 1
+  isExpanded: 0
   character:
     target: 2
     character: {fileID: 8635099074998781106}
@@ -267,21 +267,6 @@ MonoBehaviour:
   space: 1
   position: {x: 0, y: 1, z: 0}
   rotation: {x: 90, y: 0, z: 90}
---- !u!114 &1185396635
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185396633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd9e621b1ec874c8daa5bd0d1aaede64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isExpanded: 1
-  logType: 0
-  message: Abrazoooooooooo
 --- !u!114 &2015023816
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -380,8 +365,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 093bbc6a7c1334b37ac569a948728c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isExpanded: 1
+  isExpanded: 0
   waitTime: 2
+--- !u!114 &608090598
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185396633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a265a1f37ee45c9861f745d8634acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  type: 0
+  audioClip: {fileID: 0}
+  fadeOut: 0
 --- !u!1 &1231484927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,7 +1755,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8635099074998781107
 Transform:
   m_ObjectHideFlags: 0
@@ -1790,7 +1791,7 @@ MonoBehaviour:
   characterLocomotion:
     isControllable: 1
     isBusy: 0
-    runSpeed: 1
+    runSpeed: 4
     angularSpeed: 540
     gravity: -9.81
     maxFallSpeed: -100
