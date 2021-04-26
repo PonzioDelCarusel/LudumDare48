@@ -346,17 +346,36 @@
 
         public object GetSaveData()
         {
-            return new SaveData()
+            // Custom code
+            try
             {
-                position = transform.position,
-                rotation = transform.rotation
-            };
+                return new SaveData()
+                {
+                    position = transform.position,
+                    rotation = transform.rotation
+                };
+            }
+            catch
+            {
+                Debug.Log("Character.GetSaveData() throwing an error");
+                return null;
+            }
+            // End custom code
         }
 
         public void ResetData()
         {
-            transform.position = this.initSaveData.position;
-            transform.rotation = this.initSaveData.rotation;
+            // Custom code
+            try
+            {
+                transform.position = this.initSaveData.position;
+                transform.rotation = this.initSaveData.rotation;
+            }
+            catch
+            {
+                Debug.Log("Character.ResetData() throwing an error");
+            }
+            // End custom code
         }
 
         public void OnLoad(object generic)
@@ -364,8 +383,17 @@
             SaveData container = generic as SaveData;
             if (container == null) return;
 
-            transform.position = container.position;
-            transform.rotation = container.rotation;
+            // Custom code
+            try
+            {
+                transform.position = container.position;
+                transform.rotation = container.rotation;
+            }
+            catch
+            {
+                Debug.Log("Character.OnLoad() throwing an error");
+            }
+            // End custom code
         }
     }
 }

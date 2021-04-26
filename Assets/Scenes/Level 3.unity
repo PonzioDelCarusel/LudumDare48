@@ -1575,8 +1575,8 @@ GameObject:
   - component: {fileID: 374538766}
   - component: {fileID: 374538769}
   - component: {fileID: 374538768}
-  - component: {fileID: 374538767}
   - component: {fileID: 374538770}
+  - component: {fileID: 374538771}
   m_Layer: 0
   m_Name: Actions (3)
   m_TagString: Untagged
@@ -1598,57 +1598,6 @@ Transform:
   m_Father: {fileID: 2028425618}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &374538767
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374538765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42b4f58dcc3944ed28edcd8015da1125, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isExpanded: 1
-  character:
-    target: 0
-    character: {fileID: 0}
-    local:
-      allowTypesMask: 512
-      name: 
-      targetType: 2
-      targetObject: {fileID: 0}
-    global:
-      allowTypesMask: 512
-      name: 
-    list:
-      targetType: 3
-      targetObject: {fileID: 0}
-      select: 1
-      index: 0
-    eventChangeVariable:
-      m_PersistentCalls:
-        m_Calls: []
-  position:
-    target: 6
-    offset: {x: 0, y: 0, z: 0}
-    targetTransform: {fileID: 0}
-    targetPosition: {x: 0, y: 0, z: 0}
-    local:
-      allowTypesMask: 608
-      name: 
-      targetType: 2
-      targetObject: {fileID: 0}
-    global:
-      allowTypesMask: 608
-      name: CheckpointPossition
-    list:
-      targetType: 3
-      targetObject: {fileID: 0}
-      select: 1
-      index: 0
-  rotate: 0
 --- !u!114 &374538768
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1663,7 +1612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 374538770}
-  - {fileID: 374538767}
+  - {fileID: 374538771}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &374538769
@@ -1757,6 +1706,19 @@ MonoBehaviour:
       select: 1
       index: 0
   formula: {fileID: 0}
+--- !u!114 &374538771
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374538765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04cb18c81e689457da0f1516181e0dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
 --- !u!4 &409679523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 17c0915046549084c97de9093a56a054, type: 3}
@@ -2778,7 +2740,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7898265553697406419, guid: db06fde2f3e80774bac2b403317d619b, type: 3}
   m_PrefabInstance: {fileID: 7898265553651528353}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &519774230
+--- !u!114 &519774229
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2787,40 +2749,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 519774228}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a9a0a3a564ec45e0bc25c561e31e1db, type: 3}
+  m_Script: {fileID: 11500000, guid: f3467231c0c1a41dea868f6913af533b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
-  valueFrom: 0
-  global:
-    allowTypesMask: -1
-    name: 
-  local:
-    allowTypesMask: -1
-    name: 
-    targetType: 2
-    targetObject: {fileID: 0}
-  list:
-    targetType: 3
-    targetObject: {fileID: 0}
-    select: 1
-    index: 0
-  variable:
-    variableType: 0
-    global:
-      allowTypesMask: 64
-      name: CheckpointPossition
-    local:
-      allowTypesMask: 64
-      name: 
-      targetType: 2
-      targetObject: {fileID: 0}
-    list:
-      targetType: 3
-      targetObject: {fileID: 0}
-      select: 1
-      index: 0
-  value: {x: 0, y: 0, z: 0}
+  useCurrentProfile: 1
+  selectProfile: 1
 --- !u!114 &519774231 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114036595, guid: db06fde2f3e80774bac2b403317d619b, type: 3}
@@ -11766,7 +11700,7 @@ PrefabInstance:
     - target: {fileID: 7898265553697406422, guid: db06fde2f3e80774bac2b403317d619b, type: 3}
       propertyPath: actions.Array.data[0]
       value: 
-      objectReference: {fileID: 519774230}
+      objectReference: {fileID: 519774229}
     - target: {fileID: 7898265554060864932, guid: db06fde2f3e80774bac2b403317d619b, type: 3}
       propertyPath: m_Name
       value: CheckpointCube
