@@ -5325,7 +5325,7 @@ MonoBehaviour:
   isExpanded: 1
   audioClip: {fileID: 0}
   message:
-    content: Awesome job, we get to the root.
+    content: Awesome job, we found your trauma's root cause
     postProcess: 0
     translationID: 0
   color: {r: 1, g: 0.8230388, b: 0, a: 1}
