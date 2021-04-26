@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5583493017639173856}
   - component: {fileID: 5583493017639173857}
   - component: {fileID: 7977693730961036060}
+  - component: {fileID: 162862541}
   m_Layer: 0
   m_Name: Checkpoint actions
   m_TagString: Untagged
@@ -66,6 +67,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
+  - {fileID: 162862541}
   - {fileID: 7977693730961036060}
   executingIndex: -1
   isExecuting: 0
@@ -101,6 +103,22 @@ MonoBehaviour:
       targetObject: {fileID: 0}
       select: 1
       index: 0
+--- !u!114 &162862541
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583493017639173860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a265a1f37ee45c9861f745d8634acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  type: 0
+  audioClip: {fileID: 0}
+  fadeOut: 0
 --- !u!1 &5583493018455728627
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,7 +227,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5583493018805707759}
-  m_LocalRotation: {x: -0, y: -0.30070576, z: -0, w: 0.953717}
+  m_LocalRotation: {x: 0, y: -0.30070576, z: 0, w: 0.953717}
   m_LocalPosition: {x: -29.74, y: -3.15, z: -25.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
