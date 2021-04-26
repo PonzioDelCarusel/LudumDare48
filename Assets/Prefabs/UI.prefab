@@ -458,7 +458,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.864, y: 0.73014474}
   m_AnchorMax: {x: 0.9817566, y: 0.98051345}
-  m_AnchoredPosition: {x: 1.2215271, y: -18}
+  m_AnchoredPosition: {x: 1.2215576, y: -18}
   m_SizeDelta: {x: 0.44304657, y: -36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1792534543
@@ -895,7 +895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0036694217, y: 0.93200004}
   m_AnchorMax: {x: 0.034, y: 0.98051345}
-  m_AnchoredPosition: {x: -0.1998291, y: -0.14500427}
+  m_AnchoredPosition: {x: -0.1998291, y: -0.14501953}
   m_SizeDelta: {x: 0, y: 0.28993416}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &441689163736617860
@@ -1726,7 +1726,7 @@ Canvas:
   m_GameObject: {fileID: 441689164618989865}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1750,12 +1750,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

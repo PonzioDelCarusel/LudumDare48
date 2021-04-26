@@ -1619,10 +1619,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1792534541, guid: 0a823b675aadabb4a926c73543d622d4, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1.2215576
-      objectReference: {fileID: 0}
     - target: {fileID: 441689163384392833, guid: 0a823b675aadabb4a926c73543d622d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.36
@@ -1670,10 +1666,6 @@ PrefabInstance:
     - target: {fileID: 441689163384392834, guid: 0a823b675aadabb4a926c73543d622d4, type: 3}
       propertyPath: m_Name
       value: UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 441689163736617862, guid: 0a823b675aadabb4a926c73543d622d4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.14501953
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a823b675aadabb4a926c73543d622d4, type: 3}
@@ -5440,6 +5432,10 @@ PrefabInstance:
       propertyPath: audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 59db58ee88e400a4b967a3cb50c392ac, type: 3}
+    - target: {fileID: 6968776775536364896, guid: aef90b036f30e204ab1cbc4ed943f580, type: 3}
+      propertyPath: volume
+      value: 0.04
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef90b036f30e204ab1cbc4ed943f580, type: 3}
 --- !u!1 &526939886
@@ -17331,22 +17327,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 539333588499473664, guid: 79f735eab9027e240b07f183e3a5c9c0, type: 3}
-      propertyPath: isExpanded
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 539333588561770728, guid: 79f735eab9027e240b07f183e3a5c9c0, type: 3}
-      propertyPath: isExpanded
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 539333588561770734, guid: 79f735eab9027e240b07f183e3a5c9c0, type: 3}
-      propertyPath: isExpanded
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 539333589180221273, guid: 79f735eab9027e240b07f183e3a5c9c0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 539333589180221281, guid: 79f735eab9027e240b07f183e3a5c9c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
