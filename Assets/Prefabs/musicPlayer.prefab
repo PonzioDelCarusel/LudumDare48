@@ -80,7 +80,6 @@ GameObject:
   - component: {fileID: 6968776775536364898}
   - component: {fileID: 6968776775536364899}
   - component: {fileID: 6968776775536364896}
-  - component: {fileID: 7499106389952800759}
   m_Layer: 0
   m_Name: musicPlayerActions
   m_TagString: Untagged
@@ -136,7 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 6968776775536364896}
-  - {fileID: 7499106389952800759}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &6968776775536364896
@@ -157,16 +155,3 @@ MonoBehaviour:
   mixerGroup: {fileID: 0}
   fadeIn: 1
   volume: 0.04
---- !u!114 &7499106389952800759
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6968776775536364957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6550f27470913457faef2f508a2dd80a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isExpanded: 1
