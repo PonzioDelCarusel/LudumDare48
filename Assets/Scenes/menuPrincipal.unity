@@ -530,7 +530,7 @@ MonoBehaviour:
   audioMixer: 2
   mixerGroup: {fileID: 0}
   fadeIn: 0
-  volume: 0.025
+  volume: 0.1
 --- !u!1 &516800360
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,7 +832,7 @@ MonoBehaviour:
   audioMixer: 2
   mixerGroup: {fileID: 0}
   fadeIn: 0
-  volume: 0.025
+  volume: 0.1
 --- !u!1 &617196818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,7 +1161,7 @@ MonoBehaviour:
   audioMixer: 2
   mixerGroup: {fileID: 0}
   fadeIn: 0
-  volume: 0.025
+  volume: 0.1
 --- !u!1 &843975141
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,7 +1517,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 1362001343}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1858,7 +1858,7 @@ MonoBehaviour:
   audioMixer: 2
   mixerGroup: {fileID: 0}
   fadeIn: 0
-  volume: 0.025
+  volume: 0.1
 --- !u!114 &1388920743
 MonoBehaviour:
   m_ObjectHideFlags: 3
