@@ -17167,6 +17167,46 @@ MonoBehaviour:
       targetObject: {fileID: 0}
       select: 1
       index: 0
+--- !u!114 &1687372336
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687372325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6282f5544d2140058bc7a23c0771c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 0}
+  message:
+    content: If 3 monsters hugs you, you will go back to last checkpoint
+    postProcess: 0
+    translationID: 0
+  color: {r: 1, g: 0.9328417, b: 0, a: 1}
+  time: 3
+--- !u!114 &1687372337
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687372325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6282f5544d2140058bc7a23c0771c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 0}
+  message:
+    content: Monsters will try to hug you, don't let them
+    postProcess: 0
+    translationID: 0
+  color: {r: 1, g: 0.9328417, b: 0, a: 1}
+  time: 3
 --- !u!114 &1687372339
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -17179,10 +17219,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6282f5544d2140058bc7a23c0771c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isExpanded: 0
+  isExpanded: 1
   audioClip: {fileID: 0}
   message:
-    content: Press SPACE BAR + LEFT CLICK to attack when needed
+    content: Press SPACE BAR + LEFT CLICK to get rid of the monsters if they are
+      hugging you
     postProcess: 0
     translationID: 0
   color: {r: 1, g: 0.9328417, b: 0, a: 1}
@@ -18289,7 +18330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3551878865562677298, guid: ad42c7ac2ea33124382489a33b3e4070, type: 3}
       propertyPath: actions.Array.size
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3551878865562677298, guid: ad42c7ac2ea33124382489a33b3e4070, type: 3}
       propertyPath: actions.Array.data[1]
@@ -18326,19 +18367,23 @@ PrefabInstance:
     - target: {fileID: 3551878865562677298, guid: ad42c7ac2ea33124382489a33b3e4070, type: 3}
       propertyPath: actions.Array.data[8]
       value: 
-      objectReference: {fileID: 1687372339}
+      objectReference: {fileID: 1687372337}
     - target: {fileID: 3551878865562677298, guid: ad42c7ac2ea33124382489a33b3e4070, type: 3}
       propertyPath: actions.Array.data[9]
       value: 
-      objectReference: {fileID: 1687372327}
+      objectReference: {fileID: 1687372339}
     - target: {fileID: 3551878865562677298, guid: ad42c7ac2ea33124382489a33b3e4070, type: 3}
       propertyPath: actions.Array.data[10]
       value: 
-      objectReference: {fileID: 1687372331}
+      objectReference: {fileID: 1687372336}
     - target: {fileID: 3551878865562677298, guid: ad42c7ac2ea33124382489a33b3e4070, type: 3}
       propertyPath: actions.Array.data[11]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1687372327}
+    - target: {fileID: 3551878865562677298, guid: ad42c7ac2ea33124382489a33b3e4070, type: 3}
+      propertyPath: actions.Array.data[12]
+      value: 
+      objectReference: {fileID: 1687372331}
     - target: {fileID: 3551878865562677301, guid: ad42c7ac2ea33124382489a33b3e4070, type: 3}
       propertyPath: time
       value: 2
