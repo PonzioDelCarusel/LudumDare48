@@ -8298,6 +8298,9 @@ GameObject:
   - component: {fileID: 757902677}
   - component: {fileID: 757902676}
   - component: {fileID: 757902675}
+  - component: {fileID: 757902681}
+  - component: {fileID: 757902680}
+  - component: {fileID: 757902679}
   m_Layer: 0
   m_Name: Conditions111
   m_TagString: Untagged
@@ -8416,8 +8419,90 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clauses:
   - {fileID: 757902677}
-  defaultActions: {fileID: 3551878864137176207}
+  - {fileID: 757902681}
+  defaultActions: {fileID: 0}
   onInteract:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &757902679
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757902673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670bb82f9646e4e9f88a9fd84e371457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  comparison: 0
+  variable:
+    variableType: 0
+    global:
+      allowTypesMask: 8
+      name: tuto1desactivado
+    local:
+      allowTypesMask: 8
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+  compareTo:
+    optionIndex: 0
+    value: 0
+    global:
+      allowTypesMask: 8
+      name: 
+    local:
+      allowTypesMask: 8
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+--- !u!114 &757902680
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757902673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88544633e6f13414a9c20d38b5cb10a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conditions:
+  - {fileID: 757902679}
+--- !u!114 &757902681
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757902673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3247faaff1642b0aa83bf65ab47007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Clause
+  conditionsList: {fileID: 757902680}
+  actions: {fileID: 3551878864137176207}
+  isExpanded: 1
+  onCheckConditions:
+    m_PersistentCalls:
+      m_Calls: []
+  onExecuteActions:
     m_PersistentCalls:
       m_Calls: []
 --- !u!4 &758566125 stripped
@@ -15333,6 +15418,7 @@ GameObject:
   - component: {fileID: 1419177632}
   - component: {fileID: 1419177633}
   - component: {fileID: 1419177634}
+  - component: {fileID: 1419177636}
   m_Layer: 0
   m_Name: Actions
   m_TagString: Untagged
@@ -15373,6 +15459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
+  - {fileID: 1419177636}
   - {fileID: 1419177634}
   executingIndex: -1
   isExecuting: 0
@@ -15385,7 +15472,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1419177631}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06f6fcda176114231b71e606c347f970, type: 3}
+  m_Script: {fileID: 11500000, guid: 1efa2e918f10d446697b122083e4c41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
@@ -15408,6 +15495,7 @@ MonoBehaviour:
     eventChangeVariable:
       m_PersistentCalls:
         m_Calls: []
+  active: 0
 --- !u!4 &1419177635
 Transform:
   m_ObjectHideFlags: 0
@@ -15422,6 +15510,20 @@ Transform:
   m_Father: {fileID: 892150302}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1419177636
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419177631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093bbc6a7c1334b37ac569a948728c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  waitTime: 0.01
 --- !u!1 &1420609311
 GameObject:
   m_ObjectHideFlags: 0
@@ -15719,6 +15821,7 @@ GameObject:
   - component: {fileID: 1449459481}
   - component: {fileID: 1449459480}
   - component: {fileID: 1449459479}
+  - component: {fileID: 1449459482}
   m_Layer: 0
   m_Name: Actions
   m_TagString: Untagged
@@ -15749,7 +15852,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1449459477}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06f6fcda176114231b71e606c347f970, type: 3}
+  m_Script: {fileID: 11500000, guid: 1efa2e918f10d446697b122083e4c41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
@@ -15772,6 +15875,7 @@ MonoBehaviour:
     eventChangeVariable:
       m_PersistentCalls:
         m_Calls: []
+  active: 0
 --- !u!114 &1449459480
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -15785,6 +15889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
+  - {fileID: 1449459482}
   - {fileID: 1449459479}
   executingIndex: -1
   isExecuting: 0
@@ -15808,6 +15913,20 @@ MonoBehaviour:
   onFinish:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1449459482
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449459477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093bbc6a7c1334b37ac569a948728c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  waitTime: 0.01
 --- !u!1 &1459057826
 GameObject:
   m_ObjectHideFlags: 0
@@ -18621,7 +18740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d234afa27d82846abbf91e13c4f5eedf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isExpanded: 1
+  isExpanded: 0
   valueFrom: 2
   global:
     allowTypesMask: -1
@@ -22230,8 +22349,9 @@ GameObject:
   - component: {fileID: 2047935623}
   - component: {fileID: 2047935626}
   - component: {fileID: 2047935625}
-  - component: {fileID: 2047935624}
   - component: {fileID: 2047935627}
+  - component: {fileID: 2047935624}
+  - component: {fileID: 2047935628}
   m_Layer: 0
   m_Name: Actions
   m_TagString: Untagged
@@ -22262,7 +22382,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2047935622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06f6fcda176114231b71e606c347f970, type: 3}
+  m_Script: {fileID: 11500000, guid: 1efa2e918f10d446697b122083e4c41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
@@ -22285,6 +22405,7 @@ MonoBehaviour:
     eventChangeVariable:
       m_PersistentCalls:
         m_Calls: []
+  active: 0
 --- !u!114 &2047935625
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -22298,6 +22419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
+  - {fileID: 2047935628}
   - {fileID: 2047935627}
   - {fileID: 2047935624}
   executingIndex: -1
@@ -22365,6 +22487,20 @@ MonoBehaviour:
       select: 1
       index: 0
   value: 1
+--- !u!114 &2047935628
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047935622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093bbc6a7c1334b37ac569a948728c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  waitTime: 0.01
 --- !u!1001 &2059621006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24359,7 +24495,7 @@ MonoBehaviour:
   instanceID: 0
   actionsList: {fileID: 3551878865311715511}
   runInBackground: 1
-  destroyAfterFinishing: 0
+  destroyAfterFinishing: 1
   onFinish:
     m_PersistentCalls:
       m_Calls: []
@@ -24454,7 +24590,7 @@ MonoBehaviour:
   instanceID: 0
   actionsList: {fileID: 3551878865344782021}
   runInBackground: 1
-  destroyAfterFinishing: 0
+  destroyAfterFinishing: 1
   onFinish:
     m_PersistentCalls:
       m_Calls: []
