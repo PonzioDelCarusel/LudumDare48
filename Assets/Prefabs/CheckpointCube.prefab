@@ -359,7 +359,6 @@ GameObject:
   - component: {fileID: 7785258991406204312}
   - component: {fileID: 7785246836683057558}
   - component: {fileID: 7785380245913653214}
-  - component: {fileID: 7898265554154626718}
   m_Layer: 0
   m_Name: CheckpointCube
   m_TagString: Untagged
@@ -864,19 +863,6 @@ MonoBehaviour:
     maxPitch: 0
   audioLoops: []
   pitchByTimescale: 0
---- !u!65 &7898265554154626718
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7898265554060864932}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7898265554060865250
 GameObject:
   m_ObjectHideFlags: 0

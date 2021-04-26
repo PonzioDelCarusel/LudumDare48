@@ -1848,7 +1848,7 @@ MonoBehaviour:
   jumpKey: 32
   direction: {x: 0, y: 0, z: 0}
   directionVelocity: {x: 0, y: 0, z: 0}
-  useAcceleration: 1
+  useAcceleration: 0
   acceleration: 4
   deceleration: 2
 --- !u!114 &5519023604657096965
