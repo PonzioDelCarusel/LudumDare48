@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 860a66ca4259b384f9ec01b687f71c3c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -30662,7 +30662,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8141671469581806676, guid: 5eb71dd33b82844babf2f8d31bb5f12f, type: 3}
+      propertyPath: igniters.values.Array.data[0]
+      value: 
+      objectReference: {fileID: 1373616538}
+    m_RemovedComponents:
+    - {fileID: 8141671469581806683, guid: 5eb71dd33b82844babf2f8d31bb5f12f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5eb71dd33b82844babf2f8d31bb5f12f, type: 3}
 --- !u!4 &1138357883 stripped
 Transform:
@@ -33401,10 +33406,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1326027176}
     m_Modifications:
-    - target: {fileID: 6623755827771451165, guid: 0002e48569fde4b40ad5a695ed849cea, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d86bbdd7a9cccfb49a9743e27f7289c7, type: 2}
     - target: {fileID: 6623755827973130746, guid: 0002e48569fde4b40ad5a695ed849cea, type: 3}
       propertyPath: m_Name
       value: ZipLine
@@ -36779,6 +36780,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373409897}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1373616537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8141671469581806680, guid: 5eb71dd33b82844babf2f8d31bb5f12f, type: 3}
+  m_PrefabInstance: {fileID: 1138357882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1373616538
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373616537}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29094c40ec14f4f9cbf93b7699296fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 1373616540}
+--- !u!114 &1373616540 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8141671469581806676, guid: 5eb71dd33b82844babf2f8d31bb5f12f, type: 3}
+  m_PrefabInstance: {fileID: 1138357882}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373616537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae039d3d50d64815846459174f0f2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1376699962
 PrefabInstance:
   m_ObjectHideFlags: 0
